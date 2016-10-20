@@ -29,7 +29,6 @@ Puppet::Type.type(:incron).provide(:incrontab, :parent => Puppet::Provider::Pars
   # Return the header placed at the top of each generated file, warning
   # users that modifying this file manually is probably a bad idea.
   def self.header
-%{}
   end
 
   # Collapse name and env records.

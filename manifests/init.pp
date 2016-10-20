@@ -23,7 +23,7 @@ class incron (
 
   package {'incron': ensure => installed }
 
-  if manage_service {
+  if $manage_service {
     service { $incron::params::service_name:
       ensure  => $ensure,
       enable  => true,
